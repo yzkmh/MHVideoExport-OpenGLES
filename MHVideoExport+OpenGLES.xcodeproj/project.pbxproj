@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D0AD5A93C9B96601913C0F /* libPods-MHVideoExport+OpenGLES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9EBE6E9CAF25D47FC6AB /* libPods-MHVideoExport+OpenGLES.a */; };
+		A2984B0F1F57FC8B0064D680 /* girl.gif in Resources */ = {isa = PBXBuildFile; fileRef = A2984B0E1F57FC8B0064D680 /* girl.gif */; };
+		A2984B121F58FF9A0064D680 /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B111F58FF9A0064D680 /* ParticleEmitter.m */; };
+		A2984B1C1F58FFB70064D680 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B151F58FFB60064D680 /* TBXML+Compression.m */; };
+		A2984B1D1F58FFB70064D680 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B161F58FFB60064D680 /* TBXML+HTTP.m */; };
+		A2984B1E1F58FFB70064D680 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B171F58FFB60064D680 /* TBXML.m */; };
+		A2984B211F5900290064D680 /* TBXMLParticleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B201F5900290064D680 /* TBXMLParticleAdditions.m */; };
+		A2984B241F5900B10064D680 /* MHParticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B231F5900B10064D680 /* MHParticleManager.m */; };
+		A2984B271F5CEE490064D680 /* MHVideoEditOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B261F5CEE490064D680 /* MHVideoEditOperationView.m */; };
+		A2984B291F5CEEA50064D680 /* MHVideoEditOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2984B281F5CEEA50064D680 /* MHVideoEditOperationView.xib */; };
+		A2984B2C1F5CEFC20064D680 /* MHVideoEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B2B1F5CEFC20064D680 /* MHVideoEditView.m */; };
+		A2984B2E1F5CEFD20064D680 /* MHVideoEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2984B2D1F5CEFD20064D680 /* MHVideoEditView.xib */; };
+		A2984B601F5D4AFB0064D680 /* MHAdjustFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B5F1F5D4AFB0064D680 /* MHAdjustFrameView.m */; };
+		A2984B621F5D4B150064D680 /* MHAdjustFrameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2984B611F5D4B150064D680 /* MHAdjustFrameView.xib */; };
+		A2984B691F5E535C0064D680 /* MHVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B681F5E535C0064D680 /* MHVideoView.m */; };
+		A2F1D8271F5537E30094125B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8261F5537E30094125B /* main.m */; };
+		A2F1D82A1F5537E30094125B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8291F5537E30094125B /* AppDelegate.m */; };
+		A2F1D82D1F5537E30094125B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D82C1F5537E30094125B /* ViewController.m */; };
+		A2F1D8301F5537E30094125B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D82E1F5537E30094125B /* Main.storyboard */; };
+		A2F1D8321F5537E30094125B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8311F5537E30094125B /* Assets.xcassets */; };
+		A2F1D8351F5537E30094125B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8331F5537E30094125B /* LaunchScreen.storyboard */; };
+		A2F1D8411F5538310094125B /* MHVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8401F5538310094125B /* MHVideoPlayerManager.m */; };
+		A2F1D8441F5538490094125B /* MHVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8431F5538490094125B /* MHVideoCompositor.m */; };
+		A2F1D8471F5538580094125B /* MHVideoCompositionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8461F5538580094125B /* MHVideoCompositionManager.m */; };
+		A2F1D8491F5538AC0094125B /* VideoShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8481F5538AC0094125B /* VideoShader.vsh */; };
+		A2F1D84B1F553A660094125B /* VideoShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D84A1F553A660094125B /* VideoShader.fsh */; };
+		A2F1D84E1F553B020094125B /* MHVideoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D84D1F553B020094125B /* MHVideoEffect.m */; };
+		A2F1D8521F553B7C0094125B /* GLSLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8511F553B7C0094125B /* GLSLProgram.m */; };
+		A2F1D8541F553F3B0094125B /* IMG_3481.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8531F553F3B0094125B /* IMG_3481.mp4 */; };
+		A2F1D8581F5555200094125B /* MHPictureEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D8571F5555200094125B /* MHPictureEffect.m */; };
+		A2F1D85B1F55605C0094125B /* MHPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D85A1F55605C0094125B /* MHPictureModel.m */; };
+		A2F1D85E1F5560C40094125B /* MHPictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1D85D1F5560C40094125B /* MHPictureManager.m */; };
+		A2F1D8631F5565660094125B /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8621F5565660094125B /* fire.gif */; };
+		A2F1D8651F565F5C0094125B /* PictureShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8641F565F5C0094125B /* PictureShader.vsh */; };
+		A2F1D8671F565F6C0094125B /* PictureShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2F1D8661F565F6C0094125B /* PictureShader.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A08E9EBE6E9CAF25D47FC6AB /* libPods-MHVideoExport+OpenGLES.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHVideoExport+OpenGLES.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2984B0E1F57FC8B0064D680 /* girl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = girl.gif; sourceTree = "<group>"; };
+		A2984B101F58FF9A0064D680 /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
+		A2984B111F58FF9A0064D680 /* ParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitter.m; sourceTree = "<group>"; };
+		A2984B151F58FFB60064D680 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		A2984B161F58FFB60064D680 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		A2984B171F58FFB60064D680 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		A2984B191F58FFB70064D680 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		A2984B1A1F58FFB70064D680 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
+		A2984B1B1F58FFB70064D680 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		A2984B1F1F5900290064D680 /* TBXMLParticleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXMLParticleAdditions.h; sourceTree = "<group>"; };
+		A2984B201F5900290064D680 /* TBXMLParticleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXMLParticleAdditions.m; sourceTree = "<group>"; };
+		A2984B221F5900B10064D680 /* MHParticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHParticleManager.h; sourceTree = "<group>"; };
+		A2984B231F5900B10064D680 /* MHParticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHParticleManager.m; sourceTree = "<group>"; };
+		A2984B251F5CEE490064D680 /* MHVideoEditOperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoEditOperationView.h; sourceTree = "<group>"; };
+		A2984B261F5CEE490064D680 /* MHVideoEditOperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoEditOperationView.m; sourceTree = "<group>"; };
+		A2984B281F5CEEA50064D680 /* MHVideoEditOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHVideoEditOperationView.xib; sourceTree = "<group>"; };
+		A2984B2A1F5CEFC20064D680 /* MHVideoEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoEditView.h; sourceTree = "<group>"; };
+		A2984B2B1F5CEFC20064D680 /* MHVideoEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoEditView.m; sourceTree = "<group>"; };
+		A2984B2D1F5CEFD20064D680 /* MHVideoEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHVideoEditView.xib; sourceTree = "<group>"; };
+		A2984B5E1F5D4AFB0064D680 /* MHAdjustFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAdjustFrameView.h; sourceTree = "<group>"; };
+		A2984B5F1F5D4AFB0064D680 /* MHAdjustFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAdjustFrameView.m; sourceTree = "<group>"; };
+		A2984B611F5D4B150064D680 /* MHAdjustFrameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAdjustFrameView.xib; sourceTree = "<group>"; };
+		A2984B671F5E535C0064D680 /* MHVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoView.h; sourceTree = "<group>"; };
+		A2984B681F5E535C0064D680 /* MHVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoView.m; sourceTree = "<group>"; };
+		A2F1D8221F5537E30094125B /* MHVideoExport+OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHVideoExport+OpenGLES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F1D8261F5537E30094125B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2F1D8281F5537E30094125B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2F1D8291F5537E30094125B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2F1D82B1F5537E30094125B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2F1D82C1F5537E30094125B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2F1D82F1F5537E30094125B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2F1D8311F5537E30094125B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2F1D8341F5537E30094125B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2F1D8361F5537E30094125B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F1D83F1F5538310094125B /* MHVideoPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoPlayerManager.h; sourceTree = "<group>"; };
+		A2F1D8401F5538310094125B /* MHVideoPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoPlayerManager.m; sourceTree = "<group>"; };
+		A2F1D8421F5538490094125B /* MHVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoCompositor.h; sourceTree = "<group>"; };
+		A2F1D8431F5538490094125B /* MHVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoCompositor.m; sourceTree = "<group>"; };
+		A2F1D8451F5538580094125B /* MHVideoCompositionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoCompositionManager.h; sourceTree = "<group>"; };
+		A2F1D8461F5538580094125B /* MHVideoCompositionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoCompositionManager.m; sourceTree = "<group>"; };
+		A2F1D8481F5538AC0094125B /* VideoShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VideoShader.vsh; sourceTree = "<group>"; };
+		A2F1D84A1F553A660094125B /* VideoShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VideoShader.fsh; sourceTree = "<group>"; };
+		A2F1D84C1F553B020094125B /* MHVideoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVideoEffect.h; sourceTree = "<group>"; };
+		A2F1D84D1F553B020094125B /* MHVideoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVideoEffect.m; sourceTree = "<group>"; };
+		A2F1D8501F553B7C0094125B /* GLSLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSLProgram.h; sourceTree = "<group>"; };
+		A2F1D8511F553B7C0094125B /* GLSLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSLProgram.m; sourceTree = "<group>"; };
+		A2F1D8531F553F3B0094125B /* IMG_3481.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3481.mp4; sourceTree = "<group>"; };
+		A2F1D8551F5553570094125B /* MHVideoExport+OpenGLES-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHVideoExport+OpenGLES-Prefix.pch"; sourceTree = "<group>"; };
+		A2F1D8561F5555200094125B /* MHPictureEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPictureEffect.h; sourceTree = "<group>"; };
+		A2F1D8571F5555200094125B /* MHPictureEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPictureEffect.m; sourceTree = "<group>"; };
+		A2F1D8591F55605C0094125B /* MHPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPictureModel.h; sourceTree = "<group>"; };
+		A2F1D85A1F55605C0094125B /* MHPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPictureModel.m; sourceTree = "<group>"; };
+		A2F1D85C1F5560C40094125B /* MHPictureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPictureManager.h; sourceTree = "<group>"; };
+		A2F1D85D1F5560C40094125B /* MHPictureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPictureManager.m; sourceTree = "<group>"; };
+		A2F1D8621F5565660094125B /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fire.gif; sourceTree = "<group>"; };
+		A2F1D8641F565F5C0094125B /* PictureShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PictureShader.vsh; sourceTree = "<group>"; };
+		A2F1D8661F565F6C0094125B /* PictureShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PictureShader.fsh; sourceTree = "<group>"; };
+		BAFE72F7F7097BB869824969 /* Pods-MHVideoExport+OpenGLES.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHVideoExport+OpenGLES.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHVideoExport+OpenGLES/Pods-MHVideoExport+OpenGLES.release.xcconfig"; sourceTree = "<group>"; };
+		DD6E43138F75303294D3BCC9 /* Pods-MHVideoExport+OpenGLES.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHVideoExport+OpenGLES.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHVideoExport+OpenGLES/Pods-MHVideoExport+OpenGLES.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2F1D81F1F5537E30094125B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D0AD5A93C9B96601913C0F /* libPods-MHVideoExport+OpenGLES.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA159707ED2C019A6EDBEA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E43138F75303294D3BCC9 /* Pods-MHVideoExport+OpenGLES.debug.xcconfig */,
+				BAFE72F7F7097BB869824969 /* Pods-MHVideoExport+OpenGLES.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2984B131F58FFB60064D680 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				A2984B141F58FFB60064D680 /* TBXML-Code */,
+				A2984B181F58FFB60064D680 /* TBXML-Headers */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		A2984B141F58FFB60064D680 /* TBXML-Code */ = {
+			isa = PBXGroup;
+			children = (
+				A2984B151F58FFB60064D680 /* TBXML+Compression.m */,
+				A2984B161F58FFB60064D680 /* TBXML+HTTP.m */,
+				A2984B171F58FFB60064D680 /* TBXML.m */,
+			);
+			path = "TBXML-Code";
+			sourceTree = "<group>";
+		};
+		A2984B181F58FFB60064D680 /* TBXML-Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A2984B191F58FFB70064D680 /* TBXML+Compression.h */,
+				A2984B1A1F58FFB70064D680 /* TBXML+HTTP.h */,
+				A2984B1B1F58FFB70064D680 /* TBXML.h */,
+			);
+			path = "TBXML-Headers";
+			sourceTree = "<group>";
+		};
+		A2F1D8191F5537E30094125B = {
+			isa = PBXGroup;
+			children = (
+				A2F1D8241F5537E30094125B /* MHVideoExport+OpenGLES */,
+				A2F1D8231F5537E30094125B /* Products */,
+				2BA159707ED2C019A6EDBEA4 /* Pods */,
+				B2FD223376E7E9339D49ED6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2F1D8231F5537E30094125B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2F1D8221F5537E30094125B /* MHVideoExport+OpenGLES.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2F1D8241F5537E30094125B /* MHVideoExport+OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				A2984B131F58FFB60064D680 /* TBXML */,
+				A2F1D84F1F553B7C0094125B /* GLSLProgram */,
+				A2F1D8281F5537E30094125B /* AppDelegate.h */,
+				A2F1D8291F5537E30094125B /* AppDelegate.m */,
+				A2F1D82B1F5537E30094125B /* ViewController.h */,
+				A2F1D82C1F5537E30094125B /* ViewController.m */,
+				A2984B671F5E535C0064D680 /* MHVideoView.h */,
+				A2984B681F5E535C0064D680 /* MHVideoView.m */,
+				A2984B251F5CEE490064D680 /* MHVideoEditOperationView.h */,
+				A2984B261F5CEE490064D680 /* MHVideoEditOperationView.m */,
+				A2984B281F5CEEA50064D680 /* MHVideoEditOperationView.xib */,
+				A2984B2A1F5CEFC20064D680 /* MHVideoEditView.h */,
+				A2984B2B1F5CEFC20064D680 /* MHVideoEditView.m */,
+				A2984B2D1F5CEFD20064D680 /* MHVideoEditView.xib */,
+				A2984B5E1F5D4AFB0064D680 /* MHAdjustFrameView.h */,
+				A2984B5F1F5D4AFB0064D680 /* MHAdjustFrameView.m */,
+				A2984B611F5D4B150064D680 /* MHAdjustFrameView.xib */,
+				A2F1D83F1F5538310094125B /* MHVideoPlayerManager.h */,
+				A2F1D8401F5538310094125B /* MHVideoPlayerManager.m */,
+				A2F1D8421F5538490094125B /* MHVideoCompositor.h */,
+				A2F1D8431F5538490094125B /* MHVideoCompositor.m */,
+				A2F1D8451F5538580094125B /* MHVideoCompositionManager.h */,
+				A2F1D8461F5538580094125B /* MHVideoCompositionManager.m */,
+				A2F1D84C1F553B020094125B /* MHVideoEffect.h */,
+				A2F1D84D1F553B020094125B /* MHVideoEffect.m */,
+				A2F1D8561F5555200094125B /* MHPictureEffect.h */,
+				A2F1D8571F5555200094125B /* MHPictureEffect.m */,
+				A2984B101F58FF9A0064D680 /* ParticleEmitter.h */,
+				A2984B111F58FF9A0064D680 /* ParticleEmitter.m */,
+				A2984B221F5900B10064D680 /* MHParticleManager.h */,
+				A2984B231F5900B10064D680 /* MHParticleManager.m */,
+				A2984B1F1F5900290064D680 /* TBXMLParticleAdditions.h */,
+				A2984B201F5900290064D680 /* TBXMLParticleAdditions.m */,
+				A2F1D8591F55605C0094125B /* MHPictureModel.h */,
+				A2F1D85A1F55605C0094125B /* MHPictureModel.m */,
+				A2F1D85C1F5560C40094125B /* MHPictureManager.h */,
+				A2F1D85D1F5560C40094125B /* MHPictureManager.m */,
+				A2F1D82E1F5537E30094125B /* Main.storyboard */,
+				A2F1D8311F5537E30094125B /* Assets.xcassets */,
+				A2F1D8331F5537E30094125B /* LaunchScreen.storyboard */,
+				A2F1D8361F5537E30094125B /* Info.plist */,
+				A2F1D8251F5537E30094125B /* Supporting Files */,
+			);
+			path = "MHVideoExport+OpenGLES";
+			sourceTree = "<group>";
+		};
+		A2F1D8251F5537E30094125B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2F1D8621F5565660094125B /* fire.gif */,
+				A2984B0E1F57FC8B0064D680 /* girl.gif */,
+				A2F1D8531F553F3B0094125B /* IMG_3481.mp4 */,
+				A2F1D8261F5537E30094125B /* main.m */,
+				A2F1D8481F5538AC0094125B /* VideoShader.vsh */,
+				A2F1D84A1F553A660094125B /* VideoShader.fsh */,
+				A2F1D8641F565F5C0094125B /* PictureShader.vsh */,
+				A2F1D8661F565F6C0094125B /* PictureShader.fsh */,
+				A2F1D8551F5553570094125B /* MHVideoExport+OpenGLES-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2F1D84F1F553B7C0094125B /* GLSLProgram */ = {
+			isa = PBXGroup;
+			children = (
+				A2F1D8501F553B7C0094125B /* GLSLProgram.h */,
+				A2F1D8511F553B7C0094125B /* GLSLProgram.m */,
+			);
+			path = GLSLProgram;
+			sourceTree = "<group>";
+		};
+		B2FD223376E7E9339D49ED6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9EBE6E9CAF25D47FC6AB /* libPods-MHVideoExport+OpenGLES.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2F1D8211F5537E30094125B /* MHVideoExport+OpenGLES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2F1D8391F5537E30094125B /* Build configuration list for PBXNativeTarget "MHVideoExport+OpenGLES" */;
+			buildPhases = (
+				7C3EDB02203144A00A7B44D9 /* [CP] Check Pods Manifest.lock */,
+				A2F1D81E1F5537E30094125B /* Sources */,
+				A2F1D81F1F5537E30094125B /* Frameworks */,
+				A2F1D8201F5537E30094125B /* Resources */,
+				E3862131A49388DB9F4E2053 /* [CP] Embed Pods Frameworks */,
+				8865F06B84113042F66B0641 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MHVideoExport+OpenGLES";
+			productName = "MHVideoExport+OpenGLES";
+			productReference = A2F1D8221F5537E30094125B /* MHVideoExport+OpenGLES.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2F1D81A1F5537E30094125B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = FUZE;
+				TargetAttributes = {
+					A2F1D8211F5537E30094125B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 784HSP26U4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A2F1D81D1F5537E30094125B /* Build configuration list for PBXProject "MHVideoExport+OpenGLES" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2F1D8191F5537E30094125B;
+			productRefGroup = A2F1D8231F5537E30094125B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2F1D8211F5537E30094125B /* MHVideoExport+OpenGLES */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2F1D8201F5537E30094125B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2984B291F5CEEA50064D680 /* MHVideoEditOperationView.xib in Resources */,
+				A2F1D84B1F553A660094125B /* VideoShader.fsh in Resources */,
+				A2984B621F5D4B150064D680 /* MHAdjustFrameView.xib in Resources */,
+				A2F1D8491F5538AC0094125B /* VideoShader.vsh in Resources */,
+				A2984B0F1F57FC8B0064D680 /* girl.gif in Resources */,
+				A2F1D8351F5537E30094125B /* LaunchScreen.storyboard in Resources */,
+				A2F1D8651F565F5C0094125B /* PictureShader.vsh in Resources */,
+				A2F1D8541F553F3B0094125B /* IMG_3481.mp4 in Resources */,
+				A2F1D8671F565F6C0094125B /* PictureShader.fsh in Resources */,
+				A2F1D8321F5537E30094125B /* Assets.xcassets in Resources */,
+				A2984B2E1F5CEFD20064D680 /* MHVideoEditView.xib in Resources */,
+				A2F1D8631F5565660094125B /* fire.gif in Resources */,
+				A2F1D8301F5537E30094125B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C3EDB02203144A00A7B44D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8865F06B84113042F66B0641 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHVideoExport+OpenGLES/Pods-MHVideoExport+OpenGLES-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3862131A49388DB9F4E2053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHVideoExport+OpenGLES/Pods-MHVideoExport+OpenGLES-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2F1D81E1F5537E30094125B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2984B121F58FF9A0064D680 /* ParticleEmitter.m in Sources */,
+				A2F1D82D1F5537E30094125B /* ViewController.m in Sources */,
+				A2F1D8521F553B7C0094125B /* GLSLProgram.m in Sources */,
+				A2984B271F5CEE490064D680 /* MHVideoEditOperationView.m in Sources */,
+				A2F1D8471F5538580094125B /* MHVideoCompositionManager.m in Sources */,
+				A2F1D82A1F5537E30094125B /* AppDelegate.m in Sources */,
+				A2984B211F5900290064D680 /* TBXMLParticleAdditions.m in Sources */,
+				A2F1D84E1F553B020094125B /* MHVideoEffect.m in Sources */,
+				A2984B601F5D4AFB0064D680 /* MHAdjustFrameView.m in Sources */,
+				A2F1D85E1F5560C40094125B /* MHPictureManager.m in Sources */,
+				A2F1D8411F5538310094125B /* MHVideoPlayerManager.m in Sources */,
+				A2984B1E1F58FFB70064D680 /* TBXML.m in Sources */,
+				A2984B691F5E535C0064D680 /* MHVideoView.m in Sources */,
+				A2F1D85B1F55605C0094125B /* MHPictureModel.m in Sources */,
+				A2984B2C1F5CEFC20064D680 /* MHVideoEditView.m in Sources */,
+				A2984B1D1F58FFB70064D680 /* TBXML+HTTP.m in Sources */,
+				A2F1D8271F5537E30094125B /* main.m in Sources */,
+				A2984B1C1F58FFB70064D680 /* TBXML+Compression.m in Sources */,
+				A2F1D8581F5555200094125B /* MHPictureEffect.m in Sources */,
+				A2984B241F5900B10064D680 /* MHParticleManager.m in Sources */,
+				A2F1D8441F5538490094125B /* MHVideoCompositor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2F1D82E1F5537E30094125B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2F1D82F1F5537E30094125B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2F1D8331F5537E30094125B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2F1D8341F5537E30094125B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2F1D8371F5537E30094125B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2F1D8381F5537E30094125B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2F1D83A1F5537E30094125B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6E43138F75303294D3BCC9 /* Pods-MHVideoExport+OpenGLES.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 784HSP26U4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHVideoExport+OpenGLES/MHVideoExport+OpenGLES-Prefix.pch";
+				INFOPLIST_FILE = "MHVideoExport+OpenGLES/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yzkmh.MHVideoExport-OpenGLES";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2F1D83B1F5537E30094125B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFE72F7F7097BB869824969 /* Pods-MHVideoExport+OpenGLES.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 784HSP26U4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHVideoExport+OpenGLES/MHVideoExport+OpenGLES-Prefix.pch";
+				INFOPLIST_FILE = "MHVideoExport+OpenGLES/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yzkmh.MHVideoExport-OpenGLES";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2F1D81D1F5537E30094125B /* Build configuration list for PBXProject "MHVideoExport+OpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2F1D8371F5537E30094125B /* Debug */,
+				A2F1D8381F5537E30094125B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2F1D8391F5537E30094125B /* Build configuration list for PBXNativeTarget "MHVideoExport+OpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2F1D83A1F5537E30094125B /* Debug */,
+				A2F1D83B1F5537E30094125B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2F1D81A1F5537E30094125B /* Project object */;
+}

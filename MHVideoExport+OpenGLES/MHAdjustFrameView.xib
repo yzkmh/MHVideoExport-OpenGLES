@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHAdjustFrameView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3S7-4T-8BZ" customClass="YYAnimatedImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lox-Qu-M6g">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <subviews>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I81-KI-Mbx">
+                            <rect key="frame" x="180" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="7Zj-mf-b96"/>
+                                <constraint firstAttribute="width" constant="20" id="k6D-s0-S4j"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="close_image"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="g9N-pN-aNY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVG-Ad-O6y">
+                            <rect key="frame" x="180" y="180" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ObW-dB-Fez"/>
+                                <constraint firstAttribute="width" constant="20" id="aQE-Xe-cVh"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="rotation_image"/>
+                        </button>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-4r-CBI">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Fi4-js-fSn"/>
+                                <constraint firstAttribute="height" constant="20" id="LYr-cf-fqk"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="mirror_image"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dur-lV-FG9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7Qd-4r-CBI" firstAttribute="leading" secondItem="lox-Qu-M6g" secondAttribute="leading" id="HYr-D3-Dpk"/>
+                        <constraint firstAttribute="trailing" secondItem="I81-KI-Mbx" secondAttribute="trailing" id="Hf4-Nq-JCF"/>
+                        <constraint firstAttribute="trailing" secondItem="rVG-Ad-O6y" secondAttribute="trailing" id="dOZ-4C-ceR"/>
+                        <constraint firstItem="7Qd-4r-CBI" firstAttribute="top" secondItem="lox-Qu-M6g" secondAttribute="top" id="mcQ-0L-B07"/>
+                        <constraint firstItem="I81-KI-Mbx" firstAttribute="top" secondItem="lox-Qu-M6g" secondAttribute="top" id="oS2-RQ-Rvt"/>
+                        <constraint firstAttribute="bottom" secondItem="rVG-Ad-O6y" secondAttribute="bottom" id="vqd-Dm-PV9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lox-Qu-M6g" secondAttribute="bottom" id="EVm-xn-Ftz"/>
+                <constraint firstAttribute="trailing" secondItem="lox-Qu-M6g" secondAttribute="trailing" id="EZV-Dx-eZD"/>
+                <constraint firstItem="lox-Qu-M6g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZDc-4w-pi0"/>
+                <constraint firstItem="lox-Qu-M6g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iUZ-Ha-1wu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adjustBtn" destination="rVG-Ad-O6y" id="jwd-8O-mqO"/>
+                <outlet property="contentView" destination="lox-Qu-M6g" id="iC6-rR-K5M"/>
+                <outlet property="imageView" destination="3S7-4T-8BZ" id="ZeO-kv-ohb"/>
+                <outlet property="mirrorBtn" destination="7Qd-4r-CBI" id="QV8-hH-Rld"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_image" width="16" height="16"/>
+        <image name="girl.gif" width="346" height="367"/>
+        <image name="mirror_image" width="20" height="20"/>
+        <image name="rotation_image" width="20" height="20"/>
+    </resources>
+</document>
