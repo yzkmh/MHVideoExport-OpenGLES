@@ -119,7 +119,12 @@
             break;
         case MHVideoPrepareToEdit:
         {
-            [_frameView resetEdit];
+            
+            if (_frameView) {
+                [_frameView removeFromSuperview];
+                _frameView = nil;
+            }
+//            [_frameView resetEdit];
             [self videoSeekToTime:0.0f];
             
             CGFloat height = kScreenHeight - kVideoEidtToolHeight;
@@ -187,6 +192,8 @@
         if (error) {
             NSLog(@"保存视频失败:%@",error);
         } else {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"保存完成" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
             NSLog(@"保存视频到相册成功");
         }
     }];
@@ -216,10 +223,6 @@
     CGImageRef image = [self.imageGenerator copyCGImageAtTime:self.player.currentItem.currentTime actualTime:&actualTime error:&error];
     return image;
 }
-
-
-
-
 - (void)play
 {
     [self.player play];
@@ -240,6 +243,12 @@
         [self.player pause];
         self.isPlaying = NO;
     }
+    
+    if (_frameView) {
+        [_frameView removeFromSuperview];
+        _frameView = nil;
+    }
+    
     CGFloat value = self.playerItem.duration.value * time;
     
     [self.player seekToTime:CMTimeMake(value, self.playerItem.duration.timescale) toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
@@ -250,7 +259,7 @@
 #pragma mark delegate
 - (void)didSelectedWithType:(MHVideoEditItemType)type andUrl:(NSURL *)url
 {
-    _frameView = [[[NSBundle mainBundle]loadNibNamed:@"MHAdjustFrameView" owner:nil options:nil]firstObject];
+    _frameView = [[MHAdjustFrameView alloc]init];
     [_frameView setupWithURL:url];
     _frameView.center = CGPointMake(self.showView.frame.size.width/2, self.showView.frame.size.height/2);
     [self.showView addSubview:_frameView];
@@ -268,5 +277,6 @@
     }
     return _imageGenerator;
 }
+
 
 @end

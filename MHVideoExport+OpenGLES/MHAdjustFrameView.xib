@@ -15,10 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3S7-4T-8BZ" customClass="YYAnimatedImageView">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lox-Qu-M6g">
                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     <subviews>
@@ -76,7 +72,6 @@
             <connections>
                 <outlet property="adjustBtn" destination="rVG-Ad-O6y" id="jwd-8O-mqO"/>
                 <outlet property="contentView" destination="lox-Qu-M6g" id="iC6-rR-K5M"/>
-                <outlet property="imageView" destination="3S7-4T-8BZ" id="ZeO-kv-ohb"/>
                 <outlet property="mirrorBtn" destination="7Qd-4r-CBI" id="QV8-hH-Rld"/>
             </connections>
             <point key="canvasLocation" x="-28" y="-30"/>
@@ -84,7 +79,6 @@
     </objects>
     <resources>
         <image name="close_image" width="16" height="16"/>
-        <image name="girl.gif" width="346" height="367"/>
         <image name="mirror_image" width="20" height="20"/>
         <image name="rotation_image" width="20" height="20"/>
     </resources>

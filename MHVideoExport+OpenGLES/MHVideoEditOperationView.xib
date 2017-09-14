@@ -53,6 +53,9 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="2m9-7h-VPg"/>
                     </constraints>
+                    <connections>
+                        <action selector="didChangeValueFromSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="Ihe-mg-ZCw"/>
+                    </connections>
                 </slider>
                 <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-PL-3ex">
                     <rect key="frame" x="315" y="577" width="40" height="30"/>
@@ -81,6 +84,9 @@
                 <constraint firstItem="BEu-Yf-GTt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ySH-la-t7g"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="slider" destination="BEu-Yf-GTt" id="wIr-EN-pCH"/>
+            </connections>
             <point key="canvasLocation" x="-83.5" y="-116.5"/>
         </view>
     </objects>

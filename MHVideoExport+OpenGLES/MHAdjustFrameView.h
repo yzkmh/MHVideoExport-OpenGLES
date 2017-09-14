@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <YYImage/YYImage.h>
 
-@interface MHAdjustFrameView : UIView
+@interface MHAdjustFrameView : YYAnimatedImageView
 @property (nonatomic, assign) BOOL isEditing;
 @property (nonatomic, assign) BOOL isRecording;
 
