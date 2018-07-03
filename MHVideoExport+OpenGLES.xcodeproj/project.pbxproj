@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00D0AD5A93C9B96601913C0F /* libPods-MHVideoExport+OpenGLES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9EBE6E9CAF25D47FC6AB /* libPods-MHVideoExport+OpenGLES.a */; };
+		13471705209AE63E00191CD6 /* cry.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13471704209AE63D00191CD6 /* cry.gif */; };
 		A2984B0F1F57FC8B0064D680 /* girl.gif in Resources */ = {isa = PBXBuildFile; fileRef = A2984B0E1F57FC8B0064D680 /* girl.gif */; };
 		A2984B121F58FF9A0064D680 /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B111F58FF9A0064D680 /* ParticleEmitter.m */; };
 		A2984B1C1F58FFB70064D680 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = A2984B151F58FFB60064D680 /* TBXML+Compression.m */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13471704209AE63D00191CD6 /* cry.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cry.gif; sourceTree = "<group>"; };
 		A08E9EBE6E9CAF25D47FC6AB /* libPods-MHVideoExport+OpenGLES.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHVideoExport+OpenGLES.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2984B0E1F57FC8B0064D680 /* girl.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = girl.gif; sourceTree = "<group>"; };
 		A2984B101F58FF9A0064D680 /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		A2F1D8251F5537E30094125B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13471704209AE63D00191CD6 /* cry.gif */,
 				A2F1D8621F5565660094125B /* fire.gif */,
 				A2984B0E1F57FC8B0064D680 /* girl.gif */,
 				A2F1D8531F553F3B0094125B /* IMG_3481.mp4 */,
@@ -291,7 +294,7 @@
 				TargetAttributes = {
 					A2F1D8211F5537E30094125B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 784HSP26U4;
+						DevelopmentTeam = HF526ANGZB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -328,6 +331,7 @@
 				A2F1D8651F565F5C0094125B /* PictureShader.vsh in Resources */,
 				A2F1D8541F553F3B0094125B /* IMG_3481.mp4 in Resources */,
 				A2F1D8671F565F6C0094125B /* PictureShader.fsh in Resources */,
+				13471705209AE63E00191CD6 /* cry.gif in Resources */,
 				A2F1D8321F5537E30094125B /* Assets.xcassets in Resources */,
 				A2984B2E1F5CEFD20064D680 /* MHVideoEditView.xib in Resources */,
 				A2F1D8631F5565660094125B /* fire.gif in Resources */,
@@ -533,7 +537,7 @@
 			baseConfigurationReference = DD6E43138F75303294D3BCC9 /* Pods-MHVideoExport+OpenGLES.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 784HSP26U4;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHVideoExport+OpenGLES/MHVideoExport+OpenGLES-Prefix.pch";
@@ -549,7 +553,7 @@
 			baseConfigurationReference = BAFE72F7F7097BB869824969 /* Pods-MHVideoExport+OpenGLES.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 784HSP26U4;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHVideoExport+OpenGLES/MHVideoExport+OpenGLES-Prefix.pch";
